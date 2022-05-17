@@ -42,13 +42,14 @@ public class Taxi {
      */
 
     // 운행 시작
-    public void startService() {
+    public String startService() {
         // 운행 시작전 주유 상태를 체크하고 주유량이 10 이상이어야 운행 가능
         if (gasAmount < 10) {
-            return;
+            return "운행 불가";
         }
 
         // 조금 더 고민...
+        return "운행 시작!";
     }
 
     // 승객 탑승
